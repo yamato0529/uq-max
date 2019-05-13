@@ -18,3 +18,8 @@
 
 ### ステータスバー・タブバー
 * `#f9f9f9` <span style="background-color: #f9f9f9;">　</span>
+
+## パーツ
+
+### ボタンカラー
+* `#007AFF` <span style="background-color: #007AFF; color: white; font-weight: bold;">　Action　</span>
