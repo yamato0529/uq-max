@@ -1,5 +1,5 @@
 //
-//  AddressViewController.swift
+//  ContactsViewController.swift
 //  uq-max
 //
 //  Created by Yamato on 2019/05/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddressViewController: UIViewController {
+class ContactsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

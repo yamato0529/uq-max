@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OYp-hK-Nro"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="アカウント" id="mBH-Eq-UYt"/>
+                    <tabBarItem key="tabBarItem" title="アカウント" image="account" id="mBH-Eq-UYt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLz-Tr-RBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +28,7 @@
             <point key="canvasLocation" x="49" y="50"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="account" width="30" height="30"/>
+    </resources>
 </document>

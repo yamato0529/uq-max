@@ -13,14 +13,14 @@
         <!--連絡先-->
         <scene sceneID="frd-nt-gMG">
             <objects>
-                <viewController id="bad-nq-mN0" sceneMemberID="viewController">
+                <viewController id="bad-nq-mN0" customClass="ContactsViewController" customModule="uq_max" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ri-Fg-0x5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d7e-fL-Fks"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="連絡先" id="QSX-Dw-iqX"/>
+                    <tabBarItem key="tabBarItem" title="連絡先" image="contacts" id="QSX-Dw-iqX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61i-Ld-SWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +28,7 @@
             <point key="canvasLocation" x="138" y="54"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="contacts" width="30" height="30"/>
+    </resources>
 </document>

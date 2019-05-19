@@ -81,7 +81,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8IM-1F-dhO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="アラーム" id="xZf-I2-aiI"/>
+                    <tabBarItem key="tabBarItem" title="アラーム" image="alerm" id="xZf-I2-aiI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dab-Ac-3Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,4 +89,7 @@
             <point key="canvasLocation" x="-31.199999999999999" y="39.130434782608695"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alerm" width="30" height="30"/>
+    </resources>
 </document>
