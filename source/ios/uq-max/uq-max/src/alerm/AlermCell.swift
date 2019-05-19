@@ -9,7 +9,7 @@ import UIKit
 
 class AlermCell: UITableViewCell {
     
-    @IBOutlet weak var timeLable: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var alermSwitch: UISwitch!
     @IBOutlet weak var periodLabel: UILabel!
 
