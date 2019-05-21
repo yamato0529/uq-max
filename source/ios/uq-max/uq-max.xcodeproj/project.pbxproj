@@ -17,6 +17,7 @@
 		05899AEA229151CE0025ADD0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AE9229151CE0025ADD0 /* AccountViewController.swift */; };
 		05899AEC229151D90025ADD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AEB229151D90025ADD0 /* SettingsViewController.swift */; };
 		05899AEE22917FF80025ADD0 /* AlermAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AED22917FF80025ADD0 /* AlermAddViewController.swift */; };
+		0594BEB5229416E2007FD052 /* WeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594BEB4229416E2007FD052 /* WeekTableViewController.swift */; };
 		05AFBFF9228697EE00196D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AFBFF8228697EE00196D1C /* AppDelegate.swift */; };
 		05AFC000228697EE00196D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AFBFFE228697EE00196D1C /* Main.storyboard */; };
 		05AFC002228697EF00196D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AFC001228697EF00196D1C /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		05899AE9229151CE0025ADD0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		05899AEB229151D90025ADD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		05899AED22917FF80025ADD0 /* AlermAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermAddViewController.swift; sourceTree = "<group>"; };
+		0594BEB4229416E2007FD052 /* WeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableViewController.swift; sourceTree = "<group>"; };
 		05AFBFF5228697EE00196D1C /* uq-max.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uq-max.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AFBFF8228697EE00196D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05AFBFFF228697EE00196D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		05899AE22291508F0025ADD0 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0594BEB3229416C0007FD052 /* common */,
 				05899AE6229150C20025ADD0 /* settings */,
 				05899AE5229150BC0025ADD0 /* account */,
 				05899AE4229150AD0025ADD0 /* contacts */,
@@ -139,6 +142,14 @@
 				05899AEB229151D90025ADD0 /* SettingsViewController.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		0594BEB3229416C0007FD052 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0594BEB4229416E2007FD052 /* WeekTableViewController.swift */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 		05AFBFEC228697EE00196D1C = {
@@ -332,6 +343,7 @@
 				05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */,
 				05899AEE22917FF80025ADD0 /* AlermAddViewController.swift in Sources */,
 				05899AD6229137310025ADD0 /* AlermCell.swift in Sources */,
+				0594BEB5229416E2007FD052 /* WeekTableViewController.swift in Sources */,
 				05899AE8229151A70025ADD0 /* ContactViewController.swift in Sources */,
 				05899AEC229151D90025ADD0 /* SettingsViewController.swift in Sources */,
 			);

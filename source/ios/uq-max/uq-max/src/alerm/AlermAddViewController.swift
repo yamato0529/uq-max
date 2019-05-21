@@ -10,17 +10,44 @@ import UIKit
 
 class AlermAddViewController: UIViewController {
 
+    var receivedTextLabel: String?
+    @IBOutlet weak var sleepTimePicker: UIDatePicker!
     @IBAction func backButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
 
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //UIDatePickerを.timeモードにする
+        sleepTimePicker.datePickerMode = UIDatePicker.Mode.time
+        //現在の時間をDatePickerに表示
+        sleepTimePicker.setDate(Date(), animated: false)
+  
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {
+            // identifierが取れなかったら処理やめる
+            return
+        }
+        
+        if(identifier == "ncSegue") {
+            // NavigationControllerへの遷移の場合
+            
+            // segueから遷移先のNavigationControllerを取得
+            let nc = segue.destination as! UINavigationController
+            
+            // NavigationControllerの一番目のViewControllerが次の画面
+            let vc = nc.topViewController as! WeekTableViewController
+            
+            // 次画面のテキスト表示用のStringに、本画面のテキストフィールドのテキストを入れる
+//            vc.receiveText = "auau"
+            
+        }
+    }
 
+    
     /*
     // MARK: - Navigation
 
