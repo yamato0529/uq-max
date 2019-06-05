@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'uq-max' do
+  use_frameworks!
+
+  pod 'Pring'
+
+end
+

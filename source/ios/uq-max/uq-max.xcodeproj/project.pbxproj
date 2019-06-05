@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0518685422A81F700029DA9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0518685322A81F6F0029DA9C /* GoogleService-Info.plist */; };
 		05899AD6229137310025ADD0 /* AlermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD5229137310025ADD0 /* AlermCell.swift */; };
 		05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD722913AB70025ADD0 /* AlermViewController.swift */; };
 		05899ADA22914DB60025ADD0 /* Alerm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05899AD922914DB60025ADD0 /* Alerm.storyboard */; };
@@ -24,6 +25,7 @@
 		05AFC005228697EF00196D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AFC003228697EF00196D1C /* LaunchScreen.storyboard */; };
 		05AFC010228697EF00196D1C /* uq_maxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AFC00F228697EF00196D1C /* uq_maxTests.swift */; };
 		05AFC01B228697EF00196D1C /* uq_maxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AFC01A228697EF00196D1C /* uq_maxUITests.swift */; };
+		F3036610066BCDC4E542FA89 /* Pods_uq_max.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FED393C30B67A9B9EECFC9 /* Pods_uq_max.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0518685322A81F6F0029DA9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05899AD5229137310025ADD0 /* AlermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermCell.swift; sourceTree = "<group>"; };
 		05899AD722913AB70025ADD0 /* AlermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermViewController.swift; sourceTree = "<group>"; };
 		05899AD922914DB60025ADD0 /* Alerm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerm.storyboard; sourceTree = "<group>"; };
@@ -67,6 +70,9 @@
 		05AFC016228697EF00196D1C /* uq-maxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uq-maxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AFC01A228697EF00196D1C /* uq_maxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uq_maxUITests.swift; sourceTree = "<group>"; };
 		05AFC01C228697EF00196D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165C742825746E379986E0B6 /* Pods-uq-max.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uq-max.debug.xcconfig"; path = "Target Support Files/Pods-uq-max/Pods-uq-max.debug.xcconfig"; sourceTree = "<group>"; };
+		95FED393C30B67A9B9EECFC9 /* Pods_uq_max.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uq_max.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76EAB7463EB2ABC7B6E244F /* Pods-uq-max.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uq-max.release.xcconfig"; path = "Target Support Files/Pods-uq-max/Pods-uq-max.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3036610066BCDC4E542FA89 /* Pods_uq_max.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +166,8 @@
 				05AFC00E228697EF00196D1C /* uq-maxTests */,
 				05AFC019228697EF00196D1C /* uq-maxUITests */,
 				05AFBFF6228697EE00196D1C /* Products */,
+				981857FAE40B87FB32029438 /* Pods */,
+				D87336DF0F323CEB96E0FA0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				05899AE22291508F0025ADD0 /* src */,
+				0518685322A81F6F0029DA9C /* GoogleService-Info.plist */,
 				05AFBFF8228697EE00196D1C /* AppDelegate.swift */,
 				05AFC001228697EF00196D1C /* Assets.xcassets */,
 				05AFBFFE228697EE00196D1C /* Main.storyboard */,
@@ -203,6 +213,23 @@
 			path = "uq-maxUITests";
 			sourceTree = "<group>";
 		};
+		981857FAE40B87FB32029438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				165C742825746E379986E0B6 /* Pods-uq-max.debug.xcconfig */,
+				E76EAB7463EB2ABC7B6E244F /* Pods-uq-max.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D87336DF0F323CEB96E0FA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95FED393C30B67A9B9EECFC9 /* Pods_uq_max.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05AFC01F228697EF00196D1C /* Build configuration list for PBXNativeTarget "uq-max" */;
 			buildPhases = (
+				D2C39ACC225359619A29C820 /* [CP] Check Pods Manifest.lock */,
 				05AFBFF1228697EE00196D1C /* Sources */,
 				05AFBFF2228697EE00196D1C /* Frameworks */,
 				05AFBFF3228697EE00196D1C /* Resources */,
+				94F2831CD0178460B7CBE0DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05899ADC22914F180025ADD0 /* Contacts.storyboard in Resources */,
+				0518685422A81F700029DA9C /* GoogleService-Info.plist in Resources */,
 				05899ADA22914DB60025ADD0 /* Alerm.storyboard in Resources */,
 				05AFC005228697EF00196D1C /* LaunchScreen.storyboard in Resources */,
 				05AFC002228697EF00196D1C /* Assets.xcassets in Resources */,
@@ -332,6 +362,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94F2831CD0178460B7CBE0DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uq-max/Pods-uq-max-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uq-max/Pods-uq-max-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C39ACC225359619A29C820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uq-max-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05AFBFF1228697EE00196D1C /* Sources */ = {
@@ -518,15 +609,17 @@
 		};
 		05AFC020228697EF00196D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 165C742825746E379986E0B6 /* Pods-uq-max.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBJ44TS67W;
 				INFOPLIST_FILE = "uq-max/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamato.uq-max";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shibugeek.uq-max";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,15 +628,17 @@
 		};
 		05AFC021228697EF00196D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76EAB7463EB2ABC7B6E244F /* Pods-uq-max.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GBJ44TS67W;
 				INFOPLIST_FILE = "uq-max/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamato.uq-max";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shibugeek.uq-max";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
