@@ -111,10 +111,13 @@
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="5bk-5h-C0g">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zoS-2T-Kzx">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" restorationIdentifier="alermSave" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zoS-2T-Kzx">
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="保存"/>
+                                                <connections>
+                                                    <action selector="saveButton:" destination="oOH-kS-nmT" eventType="touchUpInside" id="l9Z-MG-E0m"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>

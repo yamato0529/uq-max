@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0518685422A81F700029DA9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0518685322A81F6F0029DA9C /* GoogleService-Info.plist */; };
+		0518685722A839200029DA9C /* Alerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518685622A839200029DA9C /* Alerm.swift */; };
 		05899AD6229137310025ADD0 /* AlermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD5229137310025ADD0 /* AlermCell.swift */; };
 		05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD722913AB70025ADD0 /* AlermViewController.swift */; };
 		05899ADA22914DB60025ADD0 /* Alerm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05899AD922914DB60025ADD0 /* Alerm.storyboard */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		0518685322A81F6F0029DA9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0518685622A839200029DA9C /* Alerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerm.swift; sourceTree = "<group>"; };
 		05899AD5229137310025ADD0 /* AlermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermCell.swift; sourceTree = "<group>"; };
 		05899AD722913AB70025ADD0 /* AlermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermViewController.swift; sourceTree = "<group>"; };
 		05899AD922914DB60025ADD0 /* Alerm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerm.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0518685522A838F50029DA9C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0518685622A839200029DA9C /* Alerm.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		05899AE22291508F0025ADD0 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		05899AE32291509B0025ADD0 /* alerm */ = {
 			isa = PBXGroup;
 			children = (
+				0518685522A838F50029DA9C /* model */,
 				05899AD922914DB60025ADD0 /* Alerm.storyboard */,
 				05899AD722913AB70025ADD0 /* AlermViewController.swift */,
 				05899AD5229137310025ADD0 /* AlermCell.swift */,
@@ -430,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AFBFF9228697EE00196D1C /* AppDelegate.swift in Sources */,
+				0518685722A839200029DA9C /* Alerm.swift in Sources */,
 				05899AEA229151CE0025ADD0 /* AccountViewController.swift in Sources */,
 				05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */,
 				05899AEE22917FF80025ADD0 /* AlermAddViewController.swift in Sources */,
