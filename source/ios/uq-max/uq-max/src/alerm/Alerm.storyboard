@@ -23,7 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="アラーム" id="F0q-AC-z5i">
-                                        <barButtonItem key="leftBarButtonItem" title="編集" id="ZdR-4e-41x"/>
+                                        <barButtonItem key="leftBarButtonItem" title="編集" id="UGr-65-VvA">
+                                            <connections>
+                                                <action selector="editButton:" destination="zAz-bT-UPA" id="zEl-wM-JFx"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="＋" id="EFN-EG-94w">
                                             <connections>
                                                 <segue destination="oOH-kS-nmT" kind="show" id="5cB-zE-q1A"/>
@@ -176,7 +180,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Iir-QK-TVy">
-                        <barButtonItem key="leftBarButtonItem" title="戻る" id="XCk-tf-0Rf"/>
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="XCk-tf-0Rf">
+                            <connections>
+                                <action selector="backButton:" destination="fWb-3b-Uze" id="4dj-UM-gsU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="I31-1J-LGV" id="Yvt-Hy-okE"/>

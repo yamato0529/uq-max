@@ -10,7 +10,11 @@ import UIKit
 import Pring
 
 class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
+    @IBAction func editButton(_ sender: UIBarButtonItem) {
+        
+    }
+
     let periods = ["毎週月曜日〜金曜日 - アラーム", "2019/8/29(日) - アラーム",]
     
     @IBOutlet weak var tableView: UITableView!
@@ -23,7 +27,7 @@ class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view, typically from a nib.
         
         // DataSourceを準備
-        self.dataSource = Alerm.query.dataSource()
+        self.dataSource = Alerm.order(by: \Alerm.time).dataSource()
             .on({ [weak self] (snapshot, changes) in
                 guard let tableView: UITableView = self?.tableView else { return }
                 switch changes {
@@ -50,7 +54,7 @@ class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource?.count ?? 0
     }
-    
+
     /// セルに値を設定するデータソースメソッド（必須）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -84,7 +88,6 @@ class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDa
         cell.timeLabel!.text = time
         cell.periodLabel!.text = period
 
-        
         return cell
     }
 
@@ -94,10 +97,27 @@ class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDa
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+        
     }
     
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        // override前の処理を継続してさせる
+        super.setEditing(editing, animated: animated)
+        // tableViewの編集モードを切り替える
+        tableView.isEditing = editing //editingはBool型でeditButtonに依存する変数
+        
+        navigationItem.leftBarButtonItem?.title = ""
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }    
+    }
+
+    func deleteAlerm(forRowAt indexPath: IndexPath) {
+        self.dataSource!.removeDocument(at: indexPath.row)
+    }
+    
+    private func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+        return "削除"
+    }
 }
