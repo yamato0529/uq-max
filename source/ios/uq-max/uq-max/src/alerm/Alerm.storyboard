@@ -82,6 +82,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="アラーム" image="alerm" id="xZf-I2-aiI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="X4d-I0-uC2" id="4gj-dE-Xb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dab-Ac-3Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

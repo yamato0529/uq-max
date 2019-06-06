@@ -9,8 +9,9 @@
 import Pring
 
 @objcMembers
-class Item: Object {
+class Alerm: Object {
     
     dynamic var time: Date?
+    dynamic var period: Array<String>?
     
 }

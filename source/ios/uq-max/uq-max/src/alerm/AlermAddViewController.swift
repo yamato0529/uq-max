@@ -10,9 +10,6 @@ import UIKit
 import Pring
 
 class AlermAddViewController: UIViewController {
-
-    // DataSource
-    var dataSource: DataSource<Item>?
     
     var receivedTextLabel: String?
     @IBOutlet weak var sleepTimePicker: UIDatePicker!
@@ -24,9 +21,10 @@ class AlermAddViewController: UIViewController {
     // 保存ボタン押下時
     @IBAction func saveButton(_ sender: UIButton) {
         
-        let item: Item = Item()
-        item.time = sleepTimePicker.date
-        item.save()
+        let alerm: Alerm = Alerm()
+        alerm.time = sleepTimePicker.date
+        alerm.period = [ "月", "火" ]
+        alerm.save()
     }
 
     override func viewDidLoad() {
