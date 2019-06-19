@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0518685422A81F700029DA9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0518685322A81F6F0029DA9C /* GoogleService-Info.plist */; };
 		0518685722A839200029DA9C /* Alerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518685622A839200029DA9C /* Alerm.swift */; };
+		055BDBF922AE72330095957B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BDBF822AE72330095957B /* Array.swift */; };
 		05899AD6229137310025ADD0 /* AlermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD5229137310025ADD0 /* AlermCell.swift */; };
 		05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AD722913AB70025ADD0 /* AlermViewController.swift */; };
 		05899ADA22914DB60025ADD0 /* Alerm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05899AD922914DB60025ADD0 /* Alerm.storyboard */; };
@@ -26,6 +27,8 @@
 		05AFC005228697EF00196D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AFC003228697EF00196D1C /* LaunchScreen.storyboard */; };
 		05AFC010228697EF00196D1C /* uq_maxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AFC00F228697EF00196D1C /* uq_maxTests.swift */; };
 		05AFC01B228697EF00196D1C /* uq_maxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AFC01A228697EF00196D1C /* uq_maxUITests.swift */; };
+		05B69F0222AF7C3C009F060D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B69F0122AF7C3C009F060D /* Const.swift */; };
+		05B69F0622AF8223009F060D /* AlermSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B69F0522AF8223009F060D /* AlermSettingTableViewController.swift */; };
 		F3036610066BCDC4E542FA89 /* Pods_uq_max.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FED393C30B67A9B9EECFC9 /* Pods_uq_max.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,7 @@
 /* Begin PBXFileReference section */
 		0518685322A81F6F0029DA9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0518685622A839200029DA9C /* Alerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerm.swift; sourceTree = "<group>"; };
+		055BDBF822AE72330095957B /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		05899AD5229137310025ADD0 /* AlermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermCell.swift; sourceTree = "<group>"; };
 		05899AD722913AB70025ADD0 /* AlermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermViewController.swift; sourceTree = "<group>"; };
 		05899AD922914DB60025ADD0 /* Alerm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerm.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		05AFC016228697EF00196D1C /* uq-maxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uq-maxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AFC01A228697EF00196D1C /* uq_maxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uq_maxUITests.swift; sourceTree = "<group>"; };
 		05AFC01C228697EF00196D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B69F0122AF7C3C009F060D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		05B69F0522AF8223009F060D /* AlermSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermSettingTableViewController.swift; sourceTree = "<group>"; };
 		165C742825746E379986E0B6 /* Pods-uq-max.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uq-max.debug.xcconfig"; path = "Target Support Files/Pods-uq-max/Pods-uq-max.debug.xcconfig"; sourceTree = "<group>"; };
 		95FED393C30B67A9B9EECFC9 /* Pods_uq_max.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uq_max.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76EAB7463EB2ABC7B6E244F /* Pods-uq-max.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uq-max.release.xcconfig"; path = "Target Support Files/Pods-uq-max/Pods-uq-max.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				05899AD722913AB70025ADD0 /* AlermViewController.swift */,
 				05899AD5229137310025ADD0 /* AlermCell.swift */,
 				05899AED22917FF80025ADD0 /* AlermAddViewController.swift */,
+				05B69F0522AF8223009F060D /* AlermSettingTableViewController.swift */,
 			);
 			path = alerm;
 			sourceTree = "<group>";
@@ -166,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				0594BEB4229416E2007FD052 /* WeekTableViewController.swift */,
+				055BDBF822AE72330095957B /* Array.swift */,
+				05B69F0122AF7C3C009F060D /* Const.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -441,6 +450,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AFBFF9228697EE00196D1C /* AppDelegate.swift in Sources */,
+				055BDBF922AE72330095957B /* Array.swift in Sources */,
+				05B69F0622AF8223009F060D /* AlermSettingTableViewController.swift in Sources */,
 				0518685722A839200029DA9C /* Alerm.swift in Sources */,
 				05899AEA229151CE0025ADD0 /* AccountViewController.swift in Sources */,
 				05899AD822913AB70025ADD0 /* AlermViewController.swift in Sources */,
@@ -449,6 +460,7 @@
 				0594BEB5229416E2007FD052 /* WeekTableViewController.swift in Sources */,
 				05899AE8229151A70025ADD0 /* ContactViewController.swift in Sources */,
 				05899AEC229151D90025ADD0 /* SettingsViewController.swift in Sources */,
+				05B69F0222AF7C3C009F060D /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,13 +637,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GBJ44TS67W;
+				DEVELOPMENT_TEAM = SH26JRNMJL;
 				INFOPLIST_FILE = "uq-max/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shibugeek.uq-max";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shibugeek.cocco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -644,13 +656,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GBJ44TS67W;
+				DEVELOPMENT_TEAM = SH26JRNMJL;
 				INFOPLIST_FILE = "uq-max/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shibugeek.uq-max";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shibugeek.cocco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
