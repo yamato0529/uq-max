@@ -30,7 +30,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="＋" id="EFN-EG-94w">
                                             <connections>
-                                                <segue destination="oOH-kS-nmT" kind="show" id="5cB-zE-q1A"/>
+                                                <segue destination="oOH-kS-nmT" kind="popoverPresentation" popoverAnchorBarButtonItem="EFN-EG-94w" id="5cB-zE-q1A">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -123,7 +125,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="保存"/>
                                                 <connections>
-                                                    <action selector="saveButton:" destination="oOH-kS-nmT" eventType="touchUpInside" id="l9Z-MG-E0m"/>
+                                                    <action selector="saveButton:" destination="oOH-kS-nmT" eventType="touchUpInside" id="4US-Zg-s33"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -149,6 +151,7 @@
                         <viewLayoutGuide key="safeArea" id="s3T-DC-toC"/>
                     </view>
                     <connections>
+                        <outlet property="alarmSettingView" destination="KTE-No-dbi" id="Wbu-xc-HML"/>
                         <outlet property="sleepTimePicker" destination="eom-J2-tCq" id="T4F-DK-cdq"/>
                     </connections>
                 </viewController>
@@ -182,7 +185,7 @@
                     <navigationItem key="navigationItem" id="Iir-QK-TVy">
                         <barButtonItem key="leftBarButtonItem" title="戻る" id="XCk-tf-0Rf">
                             <connections>
-                                <action selector="backButton:" destination="fWb-3b-Uze" id="4dj-UM-gsU"/>
+                                <action selector="backButton:" destination="fWb-3b-Uze" id="txd-RY-ocu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -197,6 +200,7 @@
         <!--Navigation Controller-->
         <scene sceneID="y1q-XM-fh5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igW-Wj-QFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="r5L-dC-CoL" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tYo-zk-f0D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Otz-rB-bOd">
@@ -207,14 +211,13 @@
                         <segue destination="fWb-3b-Uze" kind="relationship" relationship="rootViewController" id="eZc-fO-l9r"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="igW-Wj-QFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2324" y="-334"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Alerm Setting Table View Controller-->
         <scene sceneID="wWq-ah-GTf">
             <objects>
-                <tableViewController id="OA9-IZ-1S3" sceneMemberID="viewController">
+                <tableViewController id="OA9-IZ-1S3" customClass="AlermSettingTableViewController" customModule="uq_max" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mHI-lM-xoW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,10 +239,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-GS-kHC">
+                                                    <rect key="frame" x="196" y="10" width="145" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="r5L-dC-CoL" kind="show" id="bfI-Bc-00X"/>
+                                            <segue destination="r5L-dC-CoL" kind="showDetail" id="bfI-Bc-00X"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kbw-hE-QOn">
@@ -284,10 +294,13 @@
                             <outlet property="delegate" destination="OA9-IZ-1S3" id="hZb-By-g0R"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="periodLabel" destination="yTo-GS-kHC" id="YMg-xt-4Gc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9q-lf-Q9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="-130"/>
+            <point key="canvasLocation" x="1608.8" y="-80.50974512743629"/>
         </scene>
     </scenes>
     <resources>

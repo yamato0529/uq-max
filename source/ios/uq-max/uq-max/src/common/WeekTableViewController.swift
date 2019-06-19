@@ -11,11 +11,25 @@ import UIKit
 class WeekTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
-    var week = ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"]
+    var arraySelect = [] as Array<Int>
+    
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        
+        // アラーム追加画面を取得
+        if let navigationController =  self.presentingViewController as? UINavigationController,
+        let pvc = navigationController.topViewController as? AlermSettingTableViewController {
+            pvc.periodArray = arraySelect
+            pvc.getWeek()
+        }
+
+        dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.allowsMultipleSelection = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,7 +38,7 @@ class WeekTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return week.count
+        return Const.EVERY_WEEK.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,7 +46,7 @@ class WeekTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "weekCell", for: indexPath)
         
         // セルに表示する値を設定する
-        cell.textLabel!.text = week[indexPath.row]
+        cell.textLabel!.text = Const.EVERY_WEEK[indexPath.row]
         
         return cell
     }
@@ -47,4 +61,14 @@ class WeekTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     */
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        arraySelect.append(indexPath.row)
+        
+    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+        arraySelect.removeObject(value: indexPath.row)
+        
+    }
 }

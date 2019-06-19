@@ -54,6 +54,11 @@ class AlermViewController:  UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource?.count ?? 0
     }
+    
+    func updateLabel() {
+
+        tableView.reloadData()
+    }
 
     /// セルに値を設定するデータソースメソッド（必須）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

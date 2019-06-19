@@ -10,21 +10,33 @@ import UIKit
 import Pring
 
 class AlermAddViewController: UIViewController {
-    
-    var receivedTextLabel: String?
+
     @IBOutlet weak var sleepTimePicker: UIDatePicker!
     @IBAction func backButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
 
     }
 
+    @IBOutlet weak var alarmSettingView: UIView!
+    
     // 保存ボタン押下時
     @IBAction func saveButton(_ sender: UIButton) {
         
+        // 時刻を取得し、DBに保存
         let alerm: Alerm = Alerm()
         alerm.time = sleepTimePicker.date
         alerm.period = [ "月", "火" ]
         alerm.save()
+        
+        // アラームTOPを取得
+        let pvc = self.presentingViewController as? AlermViewController
+        
+        // アラームTOPを更新
+        pvc?.updateLabel()
+        
+        //　画面を閉じる
+        self.dismiss(animated: true, completion: nil)
+        
     }
 
     override func viewDidLoad() {
