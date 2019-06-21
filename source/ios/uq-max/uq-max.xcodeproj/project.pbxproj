@@ -21,7 +21,6 @@
 		05899AEC229151D90025ADD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AEB229151D90025ADD0 /* SettingsViewController.swift */; };
 		05899AEE22917FF80025ADD0 /* AlermAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05899AED22917FF80025ADD0 /* AlermAddViewController.swift */; };
 		058C2EC622BD2DCB0088D076 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058C2EC522BD2DCB0088D076 /* Contact.swift */; };
-		058C2EC822BD3B0E0088D076 /* ContactAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058C2EC722BD3B0E0088D076 /* ContactAddViewController.swift */; };
 		058C2ECC22BD3C890088D076 /* ContactInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058C2ECB22BD3C890088D076 /* ContactInfoTableViewController.swift */; };
 		058C2ECE22BD3F9F0088D076 /* ContactAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058C2ECD22BD3F9F0088D076 /* ContactAddTableViewController.swift */; };
 		0594BEB5229416E2007FD052 /* WeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0594BEB4229416E2007FD052 /* WeekTableViewController.swift */; };
@@ -68,7 +67,6 @@
 		05899AEB229151D90025ADD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		05899AED22917FF80025ADD0 /* AlermAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlermAddViewController.swift; sourceTree = "<group>"; };
 		058C2EC522BD2DCB0088D076 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		058C2EC722BD3B0E0088D076 /* ContactAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddViewController.swift; sourceTree = "<group>"; };
 		058C2ECB22BD3C890088D076 /* ContactInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoTableViewController.swift; sourceTree = "<group>"; };
 		058C2ECD22BD3F9F0088D076 /* ContactAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddTableViewController.swift; sourceTree = "<group>"; };
 		0594BEB4229416E2007FD052 /* WeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				058C2EC422BD2DB20088D076 /* model */,
 				05899ADB22914F180025ADD0 /* Contacts.storyboard */,
 				05899AE7229151A70025ADD0 /* ContactViewController.swift */,
-				058C2EC722BD3B0E0088D076 /* ContactAddViewController.swift */,
 				058C2ECD22BD3F9F0088D076 /* ContactAddTableViewController.swift */,
 				058C2ECB22BD3C890088D076 /* ContactInfoTableViewController.swift */,
 			);
@@ -484,7 +481,6 @@
 				05899AE8229151A70025ADD0 /* ContactViewController.swift in Sources */,
 				05899AEC229151D90025ADD0 /* SettingsViewController.swift in Sources */,
 				05B69F0222AF7C3C009F060D /* Const.swift in Sources */,
-				058C2EC822BD3B0E0088D076 /* ContactAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
